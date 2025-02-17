@@ -182,7 +182,7 @@ section {
 
 .section__text {
   align-self: center;
-  text-align: center;
+  text-align: left;
 }
 
 .section__text p {
@@ -190,7 +190,7 @@ section {
 }
 
 .section__text__p1 {
-  text-align: center;
+  text-align: left;
 }
 
 .section__text__p2 {
@@ -200,7 +200,7 @@ section {
 
 .title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
 }
 
 #socials-container {
@@ -236,6 +236,7 @@ section {
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
+  box-shadow: 5px 7px;
 }
 
 .btn-color-1:hover,
