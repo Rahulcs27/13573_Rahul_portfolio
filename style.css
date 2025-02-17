@@ -37,8 +37,21 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  top: 0;
+  z-index: 1000;
+  position: sticky;
+  background-color: transparent; /* Initially transparent */
+  transition: background-color 0.3s ease-in-out;
+}
+.nav-scrolled {
+  background-color: rgba(0, 0, 0); /* Dark background on scroll */
+  color: white;
 }
 
+.nav-scrolled .nav-links a {
+  color: white !important; /* Change link color when scrolled */
+  transition: color 0.3s ease-in-out;
+}
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -71,6 +84,16 @@ a:hover {
 #hamburger-nav {
   display: none;
 }
+
+.nav-scrolled .menu-links {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.nav-scrolled .menu-links a {
+  color: white !important;
+}
+
 
 .hamburger-menu {
   position: relative;
@@ -177,7 +200,7 @@ section {
 }
 .profile-pic {
   border-radius: 50%;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 2);
+  box-shadow: 5px 7px rgb(0, 0, 0);
 }
 
 .section__text {
@@ -221,7 +244,7 @@ section {
 
 .btn-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 1rem;
 }
 
@@ -233,10 +256,10 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1,
+.btn-color-1 ,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-  box-shadow: 5px 7px;
+  border: rgb(0, 0, 0) 0.1rem solid;
+  box-shadow: 5px 7px rgb(0, 0, 0);
 }
 
 .btn-color-1:hover,
@@ -246,12 +269,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: rgb(255, 187, 0);
+  color: black;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 
 .btn-color-2 {
