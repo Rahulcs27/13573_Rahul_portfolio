@@ -17,6 +17,7 @@ html {
 
 p {
   color: rgb(85, 85, 85);
+  font-size: 1.25rem;
 }
 
 /* TRANSITION */
@@ -44,7 +45,7 @@ nav {
   transition: background-color 0.3s ease-in-out;
 }
 .nav-scrolled {
-  background-color: rgba(0, 0, 0); /* Dark background on scroll */
+  background-color: rgba(0, 0, 0 ,0.9); /* Dark background on scroll */
   color: white;
 }
 
