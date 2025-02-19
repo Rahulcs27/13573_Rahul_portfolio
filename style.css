@@ -384,6 +384,14 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+.experience-pic {
+  position: absolute;
+  z-index: -1;
+  height: 70px;
+  width: 60px;
+  right: 300px;
+  top: 100px;
+}
 
 .article-container {
   display: flex;
