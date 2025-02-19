@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rahul's Portfolio</title>
   <link rel="icon" href="./assets/RS-removebg-preview.png">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/mediaqueries.css" />
 </head>
 
 <body>
@@ -46,21 +46,27 @@
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Rahul Suthar</h1>
-      <p class="section__text__p2"><q>Passionate Full-Stack Developer crafting stunning, interactive web experiences</q></p>
+      <p class="section__text__p2"><q id="typing-effect" class="typing-container">Passionate Full-Stack Developer crafting stunning, interactive web experiences</q></p>
       <!-- <p class="section__text__p2"><q>Code should be clean, scalable, and delightful to use. That’s what I strive for!</q></p> -->
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/Rahul-Suthar-Resume.pdf', '_blank')">
+        <a href="./assets/Rahul-Suthar-Resume.pdf" download="Rahul-Suthar-Resume.pdf">
+        <button class="btn btn-color-2">
           Download CV
         </button>
+      </a>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">
           Get in Touch
         </button>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="iconMain"
-          onclick="window.location.href='https://www.linkedin.com/in/rahulsuthar681/','_blank'" />
-        <img src="./assets/github.png" alt="My Github profile" class="iconMain"
-          onclick="window.location.href='https://github.com/Rahulcs27','_blank'" />
+        <!-- <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="iconMain"
+          onclick="window.location.href='https://www.linkedin.com/in/rahulsuthar681/','_blank'" /> -->
+          <a href="https://www.linkedin.com/in/rahulsuthar681/" title="LinkedIn" target="_blank">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="iconMain">
+          </a> 
+          <a href="https://github.com/Rahulcs27" title="Github" target="_blank">    
+        <img src="./assets/github.png" alt="My Github profile" class="iconMain"/>
+      </a>   
       </div>
     </div>
   </section>
@@ -413,11 +419,11 @@
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:rahulsuthar681@gmail.com">RahulSuthar681@gmail.com</a></p>
+        <p><a href="mailto:rahulsuthar681@gmail.com" title="Gmail">RahulSuthar681@gmail.com</a></p>
       </div>
       <div class="contact-info-container">
         <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/rahulsuthar681/">LinkedIn</a></p>
+        <p><a href="https://www.linkedin.com/in/rahulsuthar681/" title="LinkedIn">LinkedIn</a></p>
       </div>
     </div>
   </section>
@@ -434,7 +440,7 @@
     </nav>
     <p>Copyright &#169; 2025 Rahul Suthar. All Rights Reserved.</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
