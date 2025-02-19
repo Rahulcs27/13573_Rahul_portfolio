@@ -49,6 +49,15 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media (max-width: 900px) {
+  .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  /* .experience-pic {
+    right: 200px;
+    top: 90px;
+  } */
+}
 
 @media screen and (max-width: 600px) {
   #contact,
@@ -69,6 +78,9 @@
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
+  }
+  .section__text{
+    justify-content: center;
   }
   .about-containers,
   .contact-info-upper-container,
@@ -110,20 +122,11 @@
   }
 }
 
-
-
-@media (max-width: 900px) {
-  .projects-grid {
-      grid-template-columns: repeat(2, 1fr);
-  }
-  /* .experience-pic {
-    right: 200px;
-    top: 90px;
-  } */
-}
-
 @media (max-width: 600px) {
   .projects-grid {
       grid-template-columns: 1fr;
   }
 }
+
+
+

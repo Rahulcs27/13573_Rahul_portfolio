@@ -198,6 +198,7 @@ section {
 
 
 
+
 #profile {
   display: flex;
   justify-content: center;
@@ -205,9 +206,8 @@ section {
   height: 80vh;
 }
 .section__text {
-  max-width: 500px; /* Adjust as needed */
-  min-width: 400px; /* Prevent shrinking */
   text-align: left;
+  
 }
 
 .section__pic-container {
