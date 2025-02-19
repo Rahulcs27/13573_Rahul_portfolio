@@ -5,11 +5,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 html, body {
   width: 100%;
   overflow-x: hidden; /* Prevents horizontal scrolling */
+
 }
 
 body {
@@ -423,9 +425,10 @@ article .icon {
 
 .projects-grid {
   display: grid;
+  /* width: 100%; */
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .project-container { /* Style for EACH project (grid item) */
@@ -455,30 +458,10 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* ... (Your other CSS) ... */
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .projects-grid {
-      grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  .projects-grid {
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .projects-grid {
-      grid-template-columns: 1fr;
-  }
-}
-
+/* 
 #projects {
   position: relative;
-}
+} */
 
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -516,8 +499,18 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin-top: 60px;
 }
-
+.contact__pic-container {
+  /* width: 275px;
+  height: 275px; */
+  margin: 0 auto 1rem;
+}
+.contact-pic {
+  width: 150px;
+  height: 110px;
+  align-items: center;
+}
 .contact-info-upper-container {
   display: flex;
   justify-content: center;

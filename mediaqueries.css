@@ -45,6 +45,9 @@
   .about-containers {
     margin-top: 0;
   }
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -88,7 +91,7 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    /* height: 46vw; */
     justify-content: center;
   }
   .section__text__p2 {
@@ -99,5 +102,19 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+      grid-template-columns: 1fr;
   }
 }
