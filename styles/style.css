@@ -194,20 +194,8 @@ section {
 }
 
 /* PROFILE SECTION */
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 
-.typing {
-  display: inline-block;
-  border-right: 2px solid white; /* Cursor effect */
-  font-size: 1.2rem;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: blink 0.8s infinite;
-}
+
 
 
 #profile {
@@ -221,11 +209,6 @@ section {
   min-width: 400px; /* Prevent shrinking */
   text-align: left;
 }
-.typing-container {
-  display: inline-block;
-  white-space: nowrap; /* Prevents text from wrapping */
-  overflow: hidden;
-}
 
 .section__pic-container {
   display: flex;
@@ -233,10 +216,7 @@ section {
   width: 400px;
   margin: auto 0;
 }
-.profile-pic {
-  /* border-radius: 50%; */
-  /* box-shadow: 5px 7px rgb(0, 0, 0); */
-}
+
 
 .section__text {
   align-self: center;

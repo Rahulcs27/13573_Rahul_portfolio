@@ -18,22 +18,22 @@ function toggleMenu() {
     window.scrollTo(0, 0); // Start at the top of the page
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-  const text = "Passionate Full-Stack Developer crafting stunning, interactive web experiences";
-  const typingElement = document.getElementById("typing-effect");
-  let index = 0;
+// document.addEventListener("DOMContentLoaded", function () {
+//   const text = "Passionate Full-Stack Developer crafting stunning, interactive web experiences";
+//   const typingElement = document.getElementById("typing-effect");
+//   let index = 0;
 
-  function typeText() {
-    if (index < text.length) {
-      typingElement.innerHTML = text.substring(0, index + 1); // Update text
-      index++;
-      setTimeout(typeText, 50); // Adjust speed here (lower = faster)
-    }
-  }
+//   function typeText() {
+//     if (index < text.length) {
+//       typingElement.innerHTML = text.substring(0, index + 1); // Update text
+//       index++;
+//       setTimeout(typeText, 50); // Adjust speed here (lower = faster)
+//     }
+//   }
 
-  // Start typing after a small delay to ensure smooth rendering
-  setTimeout(typeText, 500);
-});
+//   // Start typing after a small delay to ensure smooth rendering
+//   setTimeout(typeText, 500);
+// });
 
   
   
